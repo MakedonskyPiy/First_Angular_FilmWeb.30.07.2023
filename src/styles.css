@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+.h1_fromHeader{
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    width: 80%;
+    display: block;
+}
+.p_fromHeader{
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: center;
+    width: 80%;
+    display: block;
+    margin: 10px 0;
+}
+.displaynone{
+    display: none !important;
+}

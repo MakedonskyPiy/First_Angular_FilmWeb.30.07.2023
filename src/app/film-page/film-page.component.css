@@ -1,0 +1,70 @@
+svg{
+    color: rgba(229, 9, 20, 1);
+    fill: currentColor;
+    width: 9.25rem;
+    height: 2.5rem;
+    padding: 20px 0;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px red solid;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+h1{
+    margin: 50px 0;
+    margin-top: 80px;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    color: white;
+}
+div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+iframe{
+    width: 90%;
+    height: 200px;
+}
+p{  
+    width: 90%;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+p::first-letter{
+    padding-left: 10px;
+}
+
+@media screen and (min-width:450px) {
+    iframe{
+        height: 250px;
+    }
+}
+@media screen and (min-width:600px) {
+    iframe{
+        height: 300px;
+    }
+}
+@media screen and (min-width:750px) {
+    iframe{
+        height: 350px;
+        max-width: 650px;
+    }
+}

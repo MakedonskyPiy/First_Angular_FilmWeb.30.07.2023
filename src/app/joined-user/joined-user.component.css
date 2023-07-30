@@ -1,0 +1,40 @@
+header{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+position: relative;
+border-bottom: 2px #e50914 solid;
+height: 75px;
+}
+header span a{
+    color:white;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    margin: 10px 0;
+    padding: 5px;
+    height: 100%;
+    cursor: pointer;
+}
+header span a.active{
+    font-size: 23px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+header svg{
+    color: grey;
+    position: absolute;
+    right: 25px;
+    bottom: 0;
+    margin-bottom: 25px;
+}
+header svg:hover{
+    cursor: pointer;
+}
+span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

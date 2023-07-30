@@ -1,0 +1,40 @@
+.lickstyle{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: underline;
+    text-align: left;
+    margin: 5px 20px;
+}
+#mainbox{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.mainblock{
+display: flex;
+flex-direction: column;
+align-items: start;
+justify-content: center;
+}
+.p_fromHeader{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+@media screen and (min-width:540px) {
+    #mainbox{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+    }
+    .mainblock{
+        margin: 0 20px;
+        }
+        .p_fromHeader{
+            margin: 0 20px;
+            padding-bottom: 20px;
+        }
+}

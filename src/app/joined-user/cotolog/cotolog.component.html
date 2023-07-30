@@ -1,0 +1,108 @@
+<section>
+    <div class="triple-flex-box">
+        <div class="single-box">
+            <div class="insideFlexcont" (mouseover)="addActive = 'active'" (mouseleave)="addActive = ''">
+                <div class="imgCont"><img alt="FilmPoster" src="../../assets/imgs/katalog/bigi4c8d6f37c1db5.jpg"></div>
+                <div class="blurBlock {{addActive}}"></div>
+                <div class="ToWatch {{addActive}}"><a routerLink="/LazyModule/filmPage" (click)="AddParametrs('shoushenk')" *ngIf="PrimeCheck()">Втеча з Шоушенка</a><p *ngIf="!PrimeCheck()">U need prime(options)</p></div>
+                <div class="serdechko {{addActive}}" (click)="serdechkoToggle()">
+
+                     <svg *ngIf="PodSerdechko1_1"  xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                    </svg>
+
+                    <svg *ngIf="PodSerdechko1" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="single-box">
+            <div class="insideFlexcont" (mouseover)="addActive2 = 'active'" (mouseleave)="addActive2 = ''">
+                <div class="imgCont"><img alt="FilmPoster" src="../../assets/imgs/katalog/Постер_фильма_«Звёздные_войны._Эпизод_III_Месть_ситхов».jpg"></div>
+                <div class="blurBlock {{addActive2}}"></div>
+                <div class="ToWatch {{addActive2}}"><a routerLink="/LazyModule/filmPage" *ngIf="PrimeCheck()" (click)="AddParametrs('starwars')">Зіркові війни</a><p *ngIf="!PrimeCheck()">U need prime(options)</p></div>
+                <div class="serdechko {{addActive2}}" (click)="serdechkoToggle2()">
+                    <svg *ngIf="PodSerdechko2_1" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                      </svg>
+
+                      <svg *ngIf="PodSerdechko2" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                      </svg>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="single-box">
+            <div class="insideFlexcont" (mouseover)="addActive3 = 'active'" (mouseleave)="addActive3 = ''">
+                <div class="imgCont"><img alt="FilmPoster" src="../../assets/imgs/katalog/Drive2011Poster.jpg"></div>
+                <div class="blurBlock {{addActive3}}"></div>
+                <div class="ToWatch {{addActive3}}"><a routerLink="/LazyModule/filmPage" *ngIf="PrimeCheck()" (click)="AddParametrs('drive')">Драйв</a><p *ngIf="!PrimeCheck()">U need prime(options)</p></div>
+                <div class="serdechko {{addActive3}}" (click)="serdechkoToggle3()">
+                    <svg *ngIf="PodSerdechko3_1" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                      </svg>
+
+                      <svg *ngIf="PodSerdechko3" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                      </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="single-box">
+            <div class="insideFlexcont" (mouseover)="addActive4 = 'active'" (mouseleave)="addActive4 = ''">
+                <div class="imgCont"><img alt="FilmPoster" src="../../assets/imgs/katalog/230514054.jpg"></div>
+                <div class="blurBlock {{addActive4}}"></div>
+                <div class="ToWatch {{addActive4}}"><a routerLink="/LazyModule/filmPage" *ngIf="PrimeCheck()" (click)="AddParametrs('pirat')">Пірати Карибського моря</a><p *ngIf="!PrimeCheck()">U need prime(options)</p></div>
+                <div class="serdechko {{addActive4}}" (click)="serdechkoToggle4()">
+                    <svg *ngIf="PodSerdechko4_1" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                      </svg>
+
+                      <svg *ngIf="PodSerdechko4" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                      </svg>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="single-box">
+            <div class="insideFlexcont" (mouseover)="addActive5 = 'active'" (mouseleave)="addActive5 = ''">
+                <div class="imgCont"><img alt="FilmPoster" src="../../assets/imgs/katalog/Green_mile_(Зелена_миля).jpg"></div>
+                <div class="blurBlock {{addActive5}}"></div>
+                <div class="ToWatch {{addActive5}}"><a routerLink="/LazyModule/filmPage" *ngIf="PrimeCheck()" (click)="AddParametrs('green')">Зелена миля</a><p *ngIf="!PrimeCheck()">U need prime(options)</p></div>
+                <div class="serdechko {{addActive5}}" (click)="serdechkoToggle5()">
+                    <svg *ngIf="PodSerdechko5_1" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                      </svg>
+
+                      <svg *ngIf="PodSerdechko5" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                      </svg>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="single-box">
+            <div class="insideFlexcont" (mouseover)="addActive6 = 'active'" (mouseleave)="addActive6 = ''">
+                <div class="imgCont"><img alt="FilmPoster" src="../../assets/imgs/katalog/25261820.jpg"></div>
+                <div class="blurBlock {{addActive6}}"></div>
+                <div class="ToWatch {{addActive6}}"><a href="https://www.youtube.com/watch?v=XxthmuqWF1Q">Бійцівський клуб</a></div>
+                <div class="serdechko {{addActive6}}" (dblclick)="serdechkoToggle6()">
+                      <svg *ngIf="PodSerdechko6" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                      </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

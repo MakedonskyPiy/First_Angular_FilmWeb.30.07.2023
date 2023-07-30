@@ -1,0 +1,143 @@
+/*header*/
+#upper-header{
+    position: relative;
+    height: 480px;
+     width:100%;
+     border-bottom:10px rgba(255, 255, 255, 0.1) solid;
+     /* background-image: url(../../../imgs/UA-uk-20230619-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+ */
+ }
+ .addPadding10leftright{
+     padding: 0 10px;
+ }
+ #middle-header{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     z-index: 2;
+     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.95) 100%);
+ }
+ #img_box_header{
+     position: absolute;
+     height: 480px;
+     width:100%;
+     z-index: 1;
+     overflow: hidden;
+ }
+ #img_box_header img{
+     width: 250%;
+     height: 100%;
+ }
+ #under-header{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     z-index: 3;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+ }
+ header{
+     display: flex;
+     width: 100%;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     padding: 25px 0;
+ }
+ #header_part2{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding-bottom: 50px;
+ }
+ .Netflix_logo_header{
+     color: rgba(229, 9, 20, 1);
+     fill: currentColor;
+     width: 9.25rem;
+     height: 2.5rem;
+ }
+ #header_div{
+     display: flex;
+     flex-direction: row;
+ 
+ }
+ .header_div_elem{
+     margin: 10px;
+ }
+ #net_about{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-decoration: none;
+ color: white;
+ background-color: rgba(0, 0, 0, 0.4);
+ border: 1px rgba(255, 255, 255, 0.6) solid;
+ border-radius: 8px;
+ padding: 7px 15px;
+ font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+ }
+ #net_about:hover,#net_about:active{
+     background-color: black;
+ }
+ .net_button{
+     display: flex;
+ align-items: center;
+ justify-content: center;
+     color: white;
+     background-color: red;
+     border: 1px red solid;
+     border-radius: 8px;
+     padding: 7px 15px;
+     font-size: 14px;
+     font-weight: 500;
+     font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+ }
+ .net_button:hover,.net_button:active{
+     cursor: pointer;
+     background-color: rgb(153,22,29);
+     border-color: rgb(153,22,29);
+ }
+ 
+ 
+ .btn_header_type2{
+     margin-top: 10px;
+     font-size: 20px;
+     
+ }
+ @media screen and (max-width:400px) {
+     #net_about{
+         display: none;
+     }
+ }
+ @media screen and (min-width:520px) {
+     #img_box_header img{
+         width: 200%;
+     }
+ }
+ @media screen and (min-width:625px) {
+     #img_box_header img{
+         width: 150%;
+     }
+ }
+ @media screen and (min-width:780px) {
+     #img_box_header img{
+         width: 120%;
+     }
+     #img_box_header{
+         height: 700px;
+     }
+     #upper-header{
+         position: relative;
+         height: 700px;
+      }
+ }
+ @media screen and (min-width:1000px) {
+     #img_box_header img{
+         width: 100%;
+         height: 100%;
+     }
+  
+ }
